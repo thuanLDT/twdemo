@@ -18,3 +18,7 @@ Route::get('/', function () {
 Auth::routes();
 Route::get('/home', 'twdemoController@index');
 Route::post('/tweet', 'twdemoController@tweet');
+Route::get('/users', 'UserController@index')->name('user_list');
+Route::post('/users/follow/{follow_id}', 'UserController@follow');
+Route::post('/users/follow/{follow_id}/delete', 'UserController@destroy');
+//中括弧でid指定

@@ -27,7 +27,7 @@
   <div id="app">
     <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
       <div class="container">
-        <a class="navbar-brand" href="{{ url('/') }}">
+        <a class="navbar-brand" href="{{ url('/home') }}">
           {{ __('Home') }}
           <!-- {{ config('app.name', 'Laravel') }} -->
         </a>
@@ -55,12 +55,12 @@
             </li>
             @else
             <li class="nav-item" style="display:flex; justify-content: center;align-items: center;">
-              <?php
-              // <a class="navbar-brand" href="{{ route('user_list') }}" style="font-size:13px">
-              //     {{ __('ユーザ一覧') }}
-              // </a>
 
-              ?>
+               <a class="navbar-brand" href="{{ route('user_list') }}" style="font-size:13px">
+                  {{ __('ユーザ一覧') }}
+               </a>
+
+
             </li>
 
             <li class="nav-item dropdown">
